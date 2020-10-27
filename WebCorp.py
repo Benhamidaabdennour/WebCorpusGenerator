@@ -158,7 +158,7 @@ def Scrapper(Links, Lang):
     #returning varibale as context in django
     return Corpora
 #Scap and save .. 
-def toJson(Keychain):
+def toJson(Keychain, Name):
     #Scrapping the web 
     Grams, Lang = getGrams(Keychain)
     Corpora = Scrapper(GetGoogleLinks(Grams), Lnag)
