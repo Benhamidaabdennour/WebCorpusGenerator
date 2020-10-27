@@ -16,8 +16,7 @@
         -json: for json files management and saving results
     ---------
     Variables returned:
-        -a Python Dictionnary is the only data structure we used to return and use  
-        because it defines the context variable in django that we will use in out templates
+        -a Python Dictionnary is returned as a json file in the same path as this code file
     ---------
     Structure of the file:
         -Containes one function generate a corpora from the search engine google.com
