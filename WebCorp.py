@@ -124,7 +124,7 @@ def Scrapper(Links, Lang):
                     if Lang == "ar":
                         Articles[Count] = sub(r'[^\u0600-\u06ff\u0750-\u077f\ufb50-\ufbc1\ufbd3-\ufd3f\ufd50-\ufd8f\ufd50-\ufd8f\ufe70-\ufefc\uFDF0-\uFDFD]+',' ',Paragraphe.getText())
                     else:
-                        Articles[Count] = sub(r'[^A-Za-z0-9]+',' ',Paragraphe.getText())                        
+                        Articles[Count] = sub(r'[^A-Za-z]+',' ',Paragraphe.getText())                        
                     #saving a globale groupes texted for further uses
                     GroupedText = GroupedText + " " +  Articles[Count]
                     Count = Count + 1
